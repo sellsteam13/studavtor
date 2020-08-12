@@ -1,7 +1,0 @@
-@function rem($px) {
-    @return ($px / 16)+rem;
-}
-
-@function lh($lh, $px) {
-    @return (($lh/$px)*100%);
-}
