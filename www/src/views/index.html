@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("../blocks/modules/header/head.html")
+
+<body>
+
+    <!-- begin of page content -->
+
+    <style>
+        @media (max-width: 1180px) {
+            .main>* {
+                display: none;
+            }
+            .main>*:last-child,
+            .main>*:nth-last-child(2),
+            .main>*:nth-last-child(3),
+            .main>*:nth-last-child(4) {
+                display: block;
+            }
+        }
+    </style>
+
+    <div class="wrapper">
+
+        <!-- connecting header-->
+        @@include("../blocks/modules/header/header.html")
+
+        <!-- begin of main part -->
+        <main class="main limiter" style="margin: 2rem auto 4rem">
+            <h1>UI Kit + Список страниц</h1>
+            <br><br><br>
+            <h1>Заголовок H1</h1>
+            <br><br>
+            <h2>Заголовок H2</h2>
+            <br><br>
+            <h3>Заголовок H3</h3>
+            <br><br>
+            <h4>Заголовок H4</h4>
+            <br><br>
+            <h5>Заголовок H5</h5>
+            <br><br>
+            <p style="max-width: 600px;">
+                Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Cum reiciendis obcaecati expedita tempora optio iusto quaerat qui repellat, aut eum dicta quo excepturi sint ipsum, sequi dolores <b>voluptatibus</b> hic, vitae fugiat
+                necessitatibus! Nihil, et accusantium.
+            </p>
+            <br><br>
+            <ul>
+                <li>Центральное учреждение, ответственное за сбор, учет, обработку, систематизацию</li>
+                <li>Автоматизирование системы информирования</li>
+                <li>Комплексная система распространения правовой информации</li>
+                <li>Система межгосударственного обмена правовой информацией</li>
+            </ul>
+            <br><br>
+            <div class="input-module" style="width: 600px;">
+                <input class="input-module__input" type="text" placeholder="Введите своё имя">
+                <label class="input-module__label">Пример инпута</label>
+                <span class="input-module__message"></span>
+            </div>
+            <br><br><br>
+            <div class="input-module is-wrong" style="width: 600px;">
+                <input class="input-module__input" type="text" placeholder="Введите своё имя" value="Пример текста">
+                <label class="input-module__label">Пример неправильного инпута</label>
+                <span class="input-module__message">Пример текста</span>
+            </div>
+            <br><br><br>
+            <div class="input-module input-module--with-select is-required" style="width: 600px;">
+                <input class="input-module__input" type="text" placeholder="Введите своё имя">
+                <label class="input-module__label">Пример инпута с селектом</label>
+                <span class="input-module__message"></span>
+                <select class="select" placeholder="">
+                    <option value="13">Example 1</option>
+                    <option value="14">Example 2</option>
+                    <option value="15">Example 3</option>
+                </select>
+            </div>
+            <br><br><br>
+            <div class="input-module input-module--with-select is-required is-wrong" style="width: 600px;">
+                <input class="input-module__input" type="text" placeholder="Введите своё имя" value="Пример текста">
+                <label class="input-module__label">Пример инпута с селектом (неправильный вариант)</label>
+                <span class="input-module__message">Пример текста</span>
+                <select class="select" placeholder="">
+                    <option value="13">Example 1</option>
+                    <option value="14">Example 2</option>
+                    <option value="15">Example 3</option>
+                </select>
+            </div>
+            <br><br><br>
+            <div class="input-module input-module--calendar is-required" style="width: 600px;">
+                <input class="input-module__input" type="text" placeholder="Выберите дату сдачи">
+                <svg class="icon icon-calendar">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-calendar"></use>
+                </svg>
+                <label class="input-module__label">Пример календаря</label>
+                <span class="input-module__message"></span>
+            </div>
+            <br><br><br>
+            <div class="input-module input-module--only-select is-required" style="width: 600px;">
+                <select class="select" placeholder="Выберите вид работы">
+                    <option value="">Выберите вид работы</option>
+                    <option value="13">Example 1</option>
+                    <option value="14">Example 2</option>
+                    <option value="15">Example 3</option>
+                </select>
+                <label class="input-module__label">Пример одиночного селекта</label>
+                <span class="input-module__message"></span>
+            </div>
+            <br><br><br>
+            <div class="input-module input-module--autocomplete is-required" style="width: 600px">
+                <div class="autocomplete-holder">
+                    <input type="text" class="autocomplete input-module__input" data-placeholder="Начните вводить предмет">
+                </div>
+                <label class="input-module__label">Пример автокомплита ( Для проверки работы начните вводить слово - "Пример" )</label>
+                <span class="input-module__message"></span>
+            </div>
+            <br><br><br>
+            <button class="def-btn">Узнать цену работы</button> &nbsp;&nbsp;
+            <a href="#" class="def-btn def-btn--blue">Узнать цену работы</a> &nbsp;
+            <a href="#" class="def-btn def-btn--link">Узнать цену работы</a> &nbsp;
+            <a href="#" class="def-btn def-btn--has-arrow-in">Узнать цену работы</a> &nbsp;
+            <a href="#" class="def-btn def-btn--has-arrow-out def-btn--green">Узнать цену работы</a>
+            <br><br>
+            <a href="#" class="white-btn">Перезвоните мне</a> &nbsp;&nbsp;
+            <a href="#" class="btn-auth" style="transform: translateY(7px);">
+                <span class="btn-auth__icon">
+                    <svg class="icon icon-user">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-user"></use>
+                    </svg>
+                </span>
+                <span class="btn-auth__text">Войти</span>
+            </a>
+            <br><br><br>
+            <button class="btn-rounded btn-rounded--prev">
+                <svg class="icon icon-chevron">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+                </svg>
+            </button> &nbsp;&nbsp;
+            <button class="btn-rounded btn-rounded--next">
+                <svg class="icon icon-chevron">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+                </svg>
+            </button>
+            <br><br><br>
+            <div class="pagination">
+                <a href="#" class="pagination-arrow pagination-arrow--prev is-disabled">
+                    <svg class="icon icon-arrow-small">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-arrow-small"></use>
+                </svg>
+                    <span>Предыдущая</span>
+                </a>
+                <a href="#" class="pagination-bullet is-current">1</a>
+                <a href="#" class="pagination-bullet">2</a>
+                <a href="#" class="pagination-bullet">3</a>
+                <a href="#" class="pagination-arrow pagination-arrow--next">
+                    <span>Следующая</span>
+                    <svg class="icon icon-arrow-small">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-arrow-small"></use>
+                </svg>
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h3>Список страниц:</h3>
+            <br><br>
+            <ul>
+                <li>
+                    <a class="def-link" href="./page-main.html">
+                        <h4>Главная</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-services.html">
+                        <h4>Услуги</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-feedback.html">
+                        <h4>Отзывы</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-order.html">
+                        <h4>Заказать</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-ap.html">
+                        <h4>Антиплагиат</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-blog.html">
+                        <h4>Блог</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-article.html">
+                        <h4>Блог - Статья</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-contacts.html">
+                        <h4>Контакты</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-login.html">
+                        <h4>Вход</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-about.html">
+                        <h4>О компании</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-error.html">
+                        <h4>404</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-product.html">
+                        <h4>Страница вида работы</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-list.html">
+                        <h4>Предметы (темы)</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link" href="./page-authors.html">
+                        <h4>Для авторов</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link call-fb" href="#">
+                        <h4>Вызвать модальное окно - Заказать звонок</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link call-thanks" href="#">
+                        <h4>Вызвать модальное окно - Спасибо</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="def-link call-filter" href="#">
+                        <h4>Вызвать модальное окно - Узнать стоимость</h4>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <!-- end of main part -->
+
+        <!-- connecting footer -->
+        @@include("../blocks/modules/footer/footer.html")
+
+    </div>
+
+    <!-- connecting modals -->
+    @@include("../blocks/modules/modals/modals.html")
+
+    <!-- end of page content -->
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

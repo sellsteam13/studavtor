@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("../blocks/modules/header/head.html")
+
+<body>
+
+    <!-- begin of page content -->
+
+    <div class="wrapper">
+
+        <!-- connecting header-->
+        @@include("../blocks/modules/header/header.html")
+
+        <!-- including breadcrumbs-->
+        @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+
+        <!-- begin of main part -->
+        <main class="main">
+
+            <!-- article section -->
+            @@include("../blocks/modules/article/article.html")
+
+            <!-- article section -->
+            @@include("../blocks/modules/blog/blog-simillar.html")
+
+        </main>
+        <!-- end of main part -->
+
+        <!-- connecting footer -->
+        @@include("../blocks/modules/footer/footer.html")
+
+    </div>
+
+    <!-- connecting modals -->
+    @@include("../blocks/modules/modals/modals.html")
+
+    <!-- end of page content -->
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

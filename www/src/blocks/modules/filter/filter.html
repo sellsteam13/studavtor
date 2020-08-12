@@ -1,0 +1,51 @@
+<form class="filter">
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--only-select is-required">
+        <select class="select" placeholder="Выберите вид работы">
+            <option value="">Выберите вид работы</option>
+            <option value="13">Example 1</option>
+            <option value="14">Example 2</option>
+            <option value="15">Example 3</option>
+        </select>
+        <label class="input-module__label">Вид работы</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--autocomplete is-required">
+        <div class="autocomplete-holder">
+            <input type="text" class="autocomplete input-module__input" data-placeholder="Начните вводить предмет">
+        </div>
+        <label class="input-module__label">Предмет</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed filter-input-module--size input-module input-module--with-select is-required">
+        <input class="input-module__input" type="text">
+        <label class="input-module__label">Объем</label>
+        <span class="input-module__message"></span>
+        <select class="select">
+            <option value="">Страниц</option>
+            <option value="13">25 Страниц</option>
+            <option value="14">30 Страниц</option>
+            <option value="15">35 Страниц</option>
+        </select>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--calendar is-required">
+        <input class="input-module__input" type="text" placeholder="Выберите дату сдачи">
+        <svg class="icon icon-calendar">
+            <use xlink:href="./img/sprites/main-sprite.svg#icon-calendar"></use>
+        </svg>
+        <label class="input-module__label">Дата сдачи</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--last input-module">
+        <input class="input-module__input" type="text">
+        <label class="input-module__label">Тема работы</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-promocode">
+        <button class="filter-promocode__btn">У меня есть промокод</button>
+        <input type="text" class="unstyled filter-promocode__input" placeholder="Введите промокод">
+    </div>
+    <button type="submit" class="filter__submit def-btn def-btn--yellow">Узнать цену работы</button>
+    <div class="filter__note">
+        Для индивидуальной оценки нетипичные заказы просьба высылать на e-mail: <a href="mail:info@studavtor.ru" class="filter__note-mail">info@studavtor.ru</a>. <a href="#" class="filter__note-more">Подробнее</a>
+    </div>
+</form>

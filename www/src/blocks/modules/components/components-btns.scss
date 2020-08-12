@@ -1,0 +1,288 @@
+/** styles for buttons **/
+
+.def-btn {
+    cursor: pointer;
+    background: $yellow;
+    box-shadow: 0px 12px 31px rgba(0, 0, 0, 0.09);
+    border-radius: rem(68);
+    padding: 0 40px;
+    min-height: 55px;
+    font-weight: bold;
+    font-size: rem(12);
+    line-height: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    color: $white;
+    transition: background-color $trans, box-shadow $trans;
+    &:hover {
+        background: #E39827;
+        box-shadow: 0px 12px 31px rgba(0, 0, 0, 0.09);
+        transition: background-color $trans, box-shadow $trans;
+    }
+    &:active,
+    &:focus {
+        background: #E39827;
+        box-shadow: 0px 12px 31px rgba(0, 0, 0, 0.09), inset 0px 3px 3px rgba(0, 0, 0, 0.1);
+        transition: background-color $trans, box-shadow $trans;
+    }
+    &--blue {
+        background-color: $blue;
+        &:hover {
+            background-color: $green;
+        }
+        &:active,
+        &:focus {
+            background-color: #79C566;
+        }
+    }
+    &--green {
+        background-color: $green;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #79C466;
+        }
+    }
+    &--has-arrow-in {
+        position: relative;
+        padding: 0 50px 0 55px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 8px;
+            background: url('../img/svg/arrow--small.svg') no-repeat center;
+            background-size: 100% 100%;
+            transition: opacity $trans, transform $trans;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 32px;
+            top: 50%;
+            transform: translate(-10px, -50%) scale(.6);
+            opacity: 0;
+            width: 14px;
+            height: 16px;
+            background: url('../img/svg/arrow--heavy.svg') no-repeat center;
+            background-size: 100% 100%;
+            transition: transform $trans, opacity $trans;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            &:before {
+                opacity: 0;
+                transform: translate(10px, -50%);
+                transition: opacity $trans, transform $trans;
+            }
+            &:after {
+                opacity: 1;
+                transform: translate(0, -50%);
+                transition: opacity $trans, transform $trans;
+            }
+        }
+    }
+    &--has-arrow-out {
+        position: relative;
+        padding: 0 32px 0 55px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%) scale(-1, 1);
+            width: 14px;
+            height: 8px;
+            background: url('../img/svg/arrow--small.svg') no-repeat center;
+            background-size: 100% 100%;
+            transition: opacity $trans, transform $trans;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 32px;
+            top: 50%;
+            transform: translate(-10px, -50%) scale(-1, 1);
+            opacity: 0;
+            width: 14px;
+            height: 16px;
+            background: url('../img/svg/arrow--heavy.svg') no-repeat center;
+            background-size: 100% 100%;
+            transition: transform $trans, opacity $trans;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            &:before {
+                opacity: 0;
+                transform: translate(10px, -50%) scale(-1, 1);
+                transition: opacity $trans, transform $trans;
+            }
+            &:after {
+                opacity: 1;
+                transform: translate(0, -50%) scale(-1, 1);
+                transition: opacity $trans, transform $trans;
+            }
+        }
+    }
+    &--link {
+        position: relative;
+        padding: 0 40px 0 30px;
+        &:before {
+            content: '';
+            position: absolute;
+            right: 19px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 8px;
+            background: url('../img/svg/arrow--small.svg') no-repeat center;
+            background-size: 100% 100%;
+            transition: opacity $trans, transform $trans;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(-1px, -50%) scale(0.6);
+            opacity: 0;
+            width: 14px;
+            height: 16px;
+            background: url('../img/svg/arrow--heavy.svg') no-repeat center;
+            background-size: 100% 100%;
+            transition: transform $trans, opacity $trans;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            &:before {
+                opacity: 0;
+                transform: translate(2px, -50%);
+                transition: opacity $trans, transform $trans;
+            }
+            &:after {
+                opacity: 1;
+                transform: translate(0, -50%) scale(1);
+                transition: opacity $trans, transform $trans;
+            }
+        }
+    }
+}
+
+.white-btn {
+    padding: 0 30px;
+    min-height: 40px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border;
+    border-radius: rem(50);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: rem(11);
+    line-height: 155%;
+    color: $black;
+    transition: border-color $trans, color $trans, box-shadow $trans;
+    &:hover {
+        border-color: #A1A4A7;
+        transition: border-color $trans, color $trans, box-shadow $trans;
+    }
+    &:focus,
+    &:active {
+        border-color: #5A5E62;
+        color: $gray;
+        box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.07);
+        transition: border-color $trans, color $trans, box-shadow $trans;
+    }
+}
+
+.btn-rounded {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color $trans, box-shadow $trans;
+    cursor: pointer;
+    &:hover {
+        box-shadow: none;
+        background-color: $green;
+        transition: background-color $trans, box-shadow $trans;
+        .icon {
+            fill: $white;
+            transition: fill $trans;
+        }
+    }
+    .icon {
+        width: 9px;
+        height: 16px;
+        fill: #ABABB1;
+        transition: fill $trans;
+    }
+    &--prev {
+        .icon {
+            transform: scale(-1, 1);
+        }
+    }
+}
+
+.btn-auth {
+    display: inline-flex;
+    align-items: center;
+    &__icon {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color $trans;
+        @media (max-width: 1180px) {
+            margin-right: 0;
+            width: 31px;
+            height: 31px;
+        }
+        .icon-user {
+            fill: $white;
+            width: 19px;
+            height: 22px;
+            @media (max-width: 1180px) {
+                width: 15px;
+                height: 17px;
+            }
+        }
+    }
+    &__text {
+        font-weight: bold;
+        line-height: 1;
+        font-size: rem(13);
+        color: #828295;
+        border-bottom: 1px solid rgba(130, 130, 149, 0.25);
+        @media (max-width: 1180px) {
+            display: none;
+        }
+    }
+    &:hover {
+        .btn-auth {
+            &__icon {
+                background-color: $yellow;
+                transition: background-color $trans;
+            }
+        }
+    }
+}
