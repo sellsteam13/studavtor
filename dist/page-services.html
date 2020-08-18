@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- page settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Студавтор верстка</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <!-- connecting fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- connecting styles -->
+    <link rel="stylesheet" href="styles/main.min.css">
+
+</head>
+
+<body>
+
+    <!-- begin of page content -->
+
+    <div class="wrapper">
+
+        <!-- connecting header-->
+        <header class="header">
+    <div class="header-wrap limiter">
+        <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="#" class="header__logo">
+            <svg class="icon icon-logo">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <nav class="header-nav">
+            <ul class="unstyled header-nav-list">
+                <li class="header-nav-list__item is-active">
+                    <a href="#">Услуги</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Заказать</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Антиплагиат</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Блог</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-auth header__auth">
+            <span class="btn-auth__icon">
+                <svg class="icon icon-user">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-user"></use>
+                </svg>
+            </span>
+            <span class="btn-auth__text">Войти</span>
+        </a>
+        <a class="header__tel" href="tel:+88007774758">
+            <svg class="icon icon-phone">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+            </svg>
+            <span>8 800 777 47 58</span>
+        </a>
+    </div>
+</header>
+
+        <!-- including breadcrumbs-->
+        <div class="breadcrumbs">
+    <div class="breadcrumbs-wrap limiter">
+        <svg class="icon icon-home">
+            <use xlink:href="./img/sprites/main-sprite.svg#icon-home"></use>
+        </svg>
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link is-current">Внутр. страница</a>
+    </div>
+</div>
+
+        <!-- begin of main part -->
+        <main class="main">
+
+            <!-- services section -->
+            <div class="services">
+    <div class="services-wrap limiter">
+        <h2 class="services__title">Наши услуги</h2>
+        <div class="section__descr services__subtitle">Предлагаем ознакомиться с полным перечнем предоставляемых услуг.</div>
+        <div class="services-list">
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="banner">
+    <div class="banner-text">
+        <div class="banner-text__title">Узнайте стоимость работы онлайн!</div>
+        <div class="banner-text__subtitle">Предлагаем рассчитать стоимость необходимой работы онлайн</div>
+    </div>
+    <a href="#" class="def-btn banner-btn">Узнать стоимость</a>
+</div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+            <div class="services-list__item">
+                <div class="services-list__item-logo">
+                    <svg class="icon icon-logo-part">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-part"></use>
+                    </svg>
+                </div>
+                <div class="services-list__item-name">Написание контрольной работы</div>
+                <div class="services-list__item-dur">Сроки выполнения: <span class="services-list__item-dur-num">от 5 дней</span></div>
+                <div class="services-list__item-descr">Краткое описание услуги. Идейные соображения высшего порядка, а также сложивя структура организации позволяет.</div>
+                <div class="services-list__item-price">oт <span class="services-list__item-price-num">5900</span> рублей</div>
+                <a href="#" class="def-btn def-btn--blue services-list__item-link">Заказать выполнение</a>
+            </div>
+        </div>
+        <div class="services__pagination">
+            <div class="pagination">
+    <a href="#" class="pagination-arrow pagination-arrow--prev is-disabled">
+        <svg class="icon icon-arrow-small">
+        <use xlink:href="./img/sprites/main-sprite.svg#icon-arrow-small"></use>
+    </svg>
+        <span>Предыдущая</span>
+    </a>
+    <a href="#" class="pagination-bullet is-current">1</a>
+    <a href="#" class="pagination-bullet">2</a>
+    <a href="#" class="pagination-bullet">3</a>
+    <a href="#" class="pagination-arrow pagination-arrow--next">
+        <span>Следующая</span>
+        <svg class="icon icon-arrow-small">
+        <use xlink:href="./img/sprites/main-sprite.svg#icon-arrow-small"></use>
+    </svg>
+    </a>
+</div>
+        </div>
+    </div>
+</div>
+
+            <!-- reviews module -->
+            <section class="reviews reviews--only-slider">
+    <h2 class="reviews__title">Отзывы наших клиентов</h2>
+    <div class="section__subtitle reviews__subtitle">Узнайте почему нас выбрали 727 клиентов</div>
+    <div class="reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide reviews-item">
+                <div class="reviews-item__avatar">
+                    <img src="./img/pics/user-avatar.jpg" alt="">
+                </div>
+                <div class="reviews-item__author">Иван Алексеевич</div>
+                <div class="reviews-item-rate">
+                    <div class="rate-label">4</div>
+                    <div class="reviews-item-rate__text">Оценка - Отлично!</div>
+                </div>
+                <div class="reviews-item__text">Ресурс создан для таких студентов, как я: работаю, но на дневном. Времени маловато, поэтому часто обращаюсь с заказами то на доклад, то на отчет. Каждый раз - профессионально выполненная работа. Довольна!</div>
+            </div>
+            <div class="swiper-slide reviews-item">
+                <div class="reviews-item__avatar">
+                    <img src="./img/pics/user-avatar.jpg" alt="">
+                </div>
+                <div class="reviews-item__author">Иван Алексеевич</div>
+                <div class="reviews-item-rate">
+                    <div class="rate-label">4</div>
+                    <div class="reviews-item-rate__text">Оценка - Отлично!</div>
+                </div>
+                <div class="reviews-item__text">Ресурс создан для таких студентов, как я: работаю, но на дневном. Времени маловато, поэтому часто обращаюсь с заказами то на доклад, то на отчет. Каждый раз - профессионально выполненная работа. Довольна!</div>
+            </div>
+            <div class="swiper-slide reviews-item">
+                <div class="reviews-item__avatar">
+                    <!-- <img src="./img/pics/user-avatar.jpg" alt=""> -->
+                </div>
+                <div class="reviews-item__author">Иван Алексеевич</div>
+                <div class="reviews-item-rate">
+                    <div class="rate-label">4</div>
+                    <div class="reviews-item-rate__text">Оценка - Отлично!</div>
+                </div>
+                <div class="reviews-item__text">Ресурс создан для таких студентов, как я: работаю, но на дневном. Времени маловато, поэтому часто обращаюсь с заказами то на доклад, то на отчет. Каждый раз - профессионально выполненная работа. Довольна!</div>
+            </div>
+        </div>
+        <div class="reviews-slider-controls">
+            <button class="btn-rounded btn-rounded--prev reviews-slider__prev">
+                <svg class="icon icon-chevron">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+                </svg>
+            </button>
+            <button class="btn-rounded btn-rounded--next reviews-slider__next">
+                <svg class="icon icon-chevron">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-chevron"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+            <!-- why module -->
+            <section class="why why--only-text">
+    <div class="why-wrap limiter">
+        <h3 class="why__title">Профессиональная помощь при написании <br> студенческих работ</h3>
+        <div class="why-text">
+            <ul class="unstyled">
+                <li>
+                    <p>Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития. </p>
+                    <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Равным образом постоянное
+                        информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития.</p>
+                </li>
+                <li>
+                    <p>Идейные соображения высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание направлений прогрессивного развития. </p>
+                    <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+                </li>
+            </ul>
+        </div>
+        <h3 class="why__title--second">Почему стоит заказать у нас?</h3>
+        <div class="why-list">
+            <div class="why-list__item">
+                <svg class="icon icon-w-1">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-w-1"></use>
+                </svg>
+                <div class="why-list__item-text">Бесплатная доработка заказа до момента принятия и получения отметки;</div>
+            </div>
+            <div class="why-list__item">
+                <svg class="icon icon-w-2">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-w-2"></use>
+                </svg>
+                <div class="why-list__item-text">Качественная проверка работы на антиплагиат с помощью нескольких сервисов;</div>
+            </div>
+            <div class="why-list__item">
+                <svg class="icon icon-w-3">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-w-3"></use>
+                </svg>
+                <div class="why-list__item-text">Удобные варианты оплаты всеми способами (наличные или безналичные);</div>
+            </div>
+            <div class="why-list__item">
+                <svg class="icon icon-w-4">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-w-4"></use>
+                </svg>
+                <div class="why-list__item-text">Гарантируем полную конфиденциальность</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <!-- end of main part -->
+
+        <!-- connecting footer -->
+        <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-top-wrap limiter">
+            <a href="tel:+88007774758" class="footer-top__tel">
+                <svg class="icon icon-phone">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+                </svg>
+                <span>8 800 777 47 58</span>
+            </a>
+            <button class="white-btn footer-top__callback">
+                Перезвоните мне
+            </button>
+            <div class="footer-top-mail">
+                <span class="footer-top-mail__text">По нетипичным заказам пишите:</span>
+                <a href="mailto:info@studavtor.ru" class="footer-top-mail__address">
+                    <svg class="icon icon-mail">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-mail"></use>
+                    </svg>
+                    <span>info@studavtor.ru</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-main-wrap limiter">
+            <a href="#" class="footer-main__logo">
+                <svg class="icon icon-logo-white">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-white"></use>
+                </svg>
+            </a>
+            <nav class="footer-main-nav">
+                <ul class="unstyled footer-main-nav-list">
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Заказать</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Антиплагиат</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">о компании</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Авторам</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-main-socials">
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-vk">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-vk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-inst">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-inst"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-fb">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-fb"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-yt">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-yt"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-wrap limiter">
+            <div class="footer-bottom__copyrights">
+                Copyright StudAvtor - Помощь студентам от лучших экспертов
+            </div>
+            <a href="#" class="footer-bottom__privacy">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- connecting modals -->
+    <div class="overlay">
+    <form class="modal modal-fb modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def-icon">
+            <img src="./img/default/modals/tel.svg" alt="icon">
+        </div>
+        <div class="modal-def__title">Заказать звонок</div>
+        <div class="input-module is-required">
+            <input class="input-module__input" type="text" placeholder="Введите своё имя">
+            <label class="input-module__label">Ваше имя</label>
+            <span class="input-module__message"></span>
+        </div>
+        <div class="input-module is-required">
+            <input class="input-module__input" type="text" placeholder="+7 (____) ____ - ____ - _____">
+            <label class="input-module__label">Телефон</label>
+            <span class="input-module__message"></span>
+        </div>
+        <div class="modal-fb__privacy">
+            <svg class="icon icon-lock">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-lock"></use>
+            </svg>
+            <span>Согласен с обработкой персональных данных в соответствии с Политикой конфеденциальности</span>
+        </div>
+        <button type="submit" class="modal-fb__submit def-btn">Узнать цену работы</button>
+    </form>
+    <div class="modal modal-thanks modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def-icon">
+            <img src="./img/default/modals/check.svg" alt="icon">
+        </div>
+        <div class="modal-def__title">Спасибо!</div>
+        <div class="modal-thanks__text">Мы получили Вашу заявку и свяжемся с Вами в ближайшее время по указанным контактам</div>
+        <a href="#" class="def-btn modal-thanks__link modal-close">Хорошо!</a>
+    </div>
+    <div class="modal modal-filter modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def__title">Заказать звонок</div>
+        <form class="filter">
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--only-select is-required">
+        <select class="select" placeholder="Выберите вид работы">
+            <option value="">Выберите вид работы</option>
+            <option value="13">Example 1</option>
+            <option value="14">Example 2</option>
+            <option value="15">Example 3</option>
+        </select>
+        <label class="input-module__label">Вид работы</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--autocomplete is-required">
+        <div class="autocomplete-holder">
+            <input type="text" class="autocomplete input-module__input" data-placeholder="Начните вводить предмет">
+        </div>
+        <label class="input-module__label">Предмет</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed filter-input-module--size input-module input-module--with-select is-required">
+        <input class="input-module__input" type="text">
+        <label class="input-module__label">Объем</label>
+        <span class="input-module__message"></span>
+        <select class="select">
+            <option value="">Страниц</option>
+            <option value="13">25 Страниц</option>
+            <option value="14">30 Страниц</option>
+            <option value="15">35 Страниц</option>
+        </select>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--calendar is-required">
+        <input class="input-module__input" type="text" placeholder="Выберите дату сдачи">
+        <svg class="icon icon-calendar">
+            <use xlink:href="./img/sprites/main-sprite.svg#icon-calendar"></use>
+        </svg>
+        <label class="input-module__label">Дата сдачи</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--last input-module">
+        <input class="input-module__input" type="text">
+        <label class="input-module__label">Тема работы</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-promocode">
+        <button class="filter-promocode__btn">У меня есть промокод</button>
+        <input type="text" class="unstyled filter-promocode__input" placeholder="Введите промокод">
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module is-required">
+        <input class="input-module__input" type="text" placeholder="Введите своё имя">
+        <label class="input-module__label">Ваше имя</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module is-required">
+        <input class="input-module__input" type="text" placeholder="+7 (____) ____ - ____ - _____">
+        <label class="input-module__label">Телефон</label>
+        <span class="input-module__message"></span>
+    </div>
+    <button type="submit" class="filter__submit def-btn def-btn--yellow">Узнать цену работы</button>
+    <div class="filter__note">
+        Для индивидуальной оценки нетипичные заказы просьба высылать на e-mail: <a href="mail:info@studavtor.ru" class="filter__note-mail">info@studavtor.ru</a>. <a href="#" class="filter__note-more">Подробнее</a>
+    </div>
+</form>
+    </div>
+</div>
+
+    <!-- end of page content -->
+
+    <!-- connecting scripts -->
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+
+</body>
+
+</html>

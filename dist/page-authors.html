@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- page settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Студавтор верстка</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <!-- connecting fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- connecting styles -->
+    <link rel="stylesheet" href="styles/main.min.css">
+
+</head>
+
+<body>
+
+    <!-- begin of page content -->
+
+    <div class="wrapper">
+
+        <!-- connecting header-->
+        <header class="header">
+    <div class="header-wrap limiter">
+        <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="#" class="header__logo">
+            <svg class="icon icon-logo">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <nav class="header-nav">
+            <ul class="unstyled header-nav-list">
+                <li class="header-nav-list__item is-active">
+                    <a href="#">Услуги</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Заказать</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Антиплагиат</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Блог</a>
+                </li>
+                <li class="header-nav-list__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-auth header__auth">
+            <span class="btn-auth__icon">
+                <svg class="icon icon-user">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-user"></use>
+                </svg>
+            </span>
+            <span class="btn-auth__text">Войти</span>
+        </a>
+        <a class="header__tel" href="tel:+88007774758">
+            <svg class="icon icon-phone">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+            </svg>
+            <span>8 800 777 47 58</span>
+        </a>
+    </div>
+</header>
+
+        <!-- including breadcrumbs-->
+        <div class="breadcrumbs">
+    <div class="breadcrumbs-wrap limiter">
+        <svg class="icon icon-home">
+            <use xlink:href="./img/sprites/main-sprite.svg#icon-home"></use>
+        </svg>
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link is-current">Внутр. страница</a>
+    </div>
+</div>
+
+        <!-- begin of main part -->
+        <main class="main">
+
+            <!-- authors section -->
+            <div class="authors">
+    <section class="authors-welcome">
+        <div class="authors-welcome-wrap limiter">
+            <h2 class="authors-welcome__title">Вакансии для авторов студенческих работ</h2>
+            <div class="authors-welcome__subtitle">Зарегестрируйтесь и станьте автором</div>
+            <div class="authors-welcome-filter">
+                <form class="authors-welcome-filter-form">
+                    <div class="authors-welcome-filter-form--input input-module is-required">
+                        <input class="input-module__input" type="text" placeholder="Введите своё имя">
+                        <label class="input-module__label">ФИО</label>
+                        <span class="input-module__message"></span>
+                    </div>
+                    <div class="authors-welcome-filter-form--input input-module is-required">
+                        <input class="input-module__input" type="text" placeholder="Email">
+                        <label class="input-module__label">Введите свой email</label>
+                        <span class="input-module__message"></span>
+                    </div>
+                    <div class="authors-welcome-filter-form--input input-module is-required">
+                        <input class="input-module__input" type="text" placeholder="+7 (____) ____ - ____ - _____">
+                        <label class="input-module__label">Телефон</label>
+                        <span class="input-module__message"></span>
+                    </div>
+                    <div class="authors-welcome-filter-form--text input-module">
+                        <textarea class="input-module__input" placeholder="Расскажите о себе"></textarea>
+                        <label class="input-module__label">О себе</label>
+                        <span class="input-module__message"></span>
+                    </div>
+                    <button type="submit" class="def-btn authors-welcome-filter-form__submit">Зарегистрироваться</button>
+                    <div class="authors-welcome-filter-form__privacy">
+                        <svg class="icon icon-lock">
+                            <use xlink:href="./img/sprites/main-sprite.svg#icon-lock"></use>
+                        </svg>
+                        <span>Регистрируясь Вы автоматически соглашаетесь с обработкой персональных данных в соответствии с Политикой конфеденциальности</span>
+                    </div>
+                </form>
+                <div class="filter-advantages">
+    <div class="filter-advantages__item">
+        <div class="filter-advantages__item-illstr">
+            <svg class="icon icon-authors-w-1">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-authors-w-1"></use>
+            </svg>
+        </div>
+        <div class="filter-advantages__item-text">
+            <span>Без посредников</span>
+            <span>Только личное общение с заказчиком</span>
+        </div>
+    </div>
+    <div class="filter-advantages__item">
+        <div class="filter-advantages__item-illstr">
+            <svg class="icon icon-authors-w-2">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-authors-w-2"></use>
+            </svg>
+        </div>
+        <div class="filter-advantages__item-text">
+            <span>Свобоный график</span>
+            <span>Удаленная работа со свободным графиком</span>
+        </div>
+    </div>
+    <div class="filter-advantages__item">
+        <div class="filter-advantages__item-illstr">
+            <svg class="icon icon-authors-w-3">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-authors-w-3"></use>
+            </svg>
+        </div>
+        <div class="filter-advantages__item-text">
+            <span>Постоянный поток</span>
+            <span>Стабильный поток постоянных заказов</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <section class="authors-pricing">
+        <div class="authors-pricing-wrap limiter">
+            <h2 class="authors-pricing__title">Наши расценки</h2>
+            <div class="authors-pricing__subtitle">Расценки в таблице предоставлены в расчете 1 рубль за 1 страницу</div>
+            <div class="authors-pricing__descr">При стандартном сроке выполнения заказов, коэффициент = <span>1</span> (за срочность выполнения работ вводятся дополнительные повышающие коэффициенты = <span>1.5</span>, <span>1.75</span> и <span>2</span> )</div>
+            <div class="authors-pricing-list">
+                <div class="authors-pricing-list__item">
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Контрольная работа <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            30 <span>руб</span>
+                        </div>
+                    </div>
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Курсовая работа <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            35 <span>руб</span>
+                        </div>
+                    </div>
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Дипломная работа <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            65 <span>руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="authors-pricing-list__item">
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Отчет по практике <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            30 <span>руб</span>
+                        </div>
+                    </div>
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Семестровая работа <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            35 <span>руб</span>
+                        </div>
+                    </div>
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Эссе <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            65 <span>руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="authors-pricing-list__item">
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Реферат <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            30 <span>руб</span>
+                        </div>
+                    </div>
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Презентация <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            35 <span>руб</span>
+                        </div>
+                    </div>
+                    <div class="authors-pricing-list__item-row">
+                        <div class="authors-pricing-list__item-row-title">
+                            Доклад <span>от</span>
+                        </div>
+                        <div class="authors-pricing-list__item-row-price">
+                            65 <span>руб</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="authors-earnings">
+        <div class="authors-earnings-wrap limiter">
+            <h2 class="authors-earnings__title">Перспективы заработка</h2>
+            <div class="authors-earnings__subtitle">Оцените перспективы заработка в зависимости от графика работы</div>
+            <div class="authors-earnings-list">
+                <div class="authors-earnings-list__item">
+                    <div class="authors-earnings-list__item-count">
+                        <img src="./img/svg/authors/authors-n-1.svg" alt="num">
+                    </div>
+                    <div class="authors-earnings-list__item-title">В свободное время</div>
+                    <div class="authors-earnings-list__item-info">
+                        <div class="authors-earnings-list__item-info-salary">7 500 – 20 000 руб /мес</div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>1-3</span> дня в неделю
+                        </div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>3-5</span> часов в день
+                        </div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>3-7</span> заказов в месяц
+                        </div>
+                    </div>
+                    <a href="" class="def-btn authors-earnings-list__item-btn">
+                        Начать работу
+                    </a>
+                </div>
+                <div class="authors-earnings-list__item">
+                    <div class="authors-earnings-list__item-count">
+                        <img src="./img/svg/authors/authors-n-2.svg" alt="num">
+                    </div>
+                    <div class="authors-earnings-list__item-title">ПОЛНАЯ ЗАНЯТОСТЬ</div>
+                    <div class="authors-earnings-list__item-info">
+                        <div class="authors-earnings-list__item-info-salary">50 000 - 120 000 руб /мес</div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>1-3</span> дня в неделю
+                        </div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>3-5</span> часов в день
+                        </div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>3-7</span> заказов в месяц
+                        </div>
+                    </div>
+                    <a href="" class="def-btn authors-earnings-list__item-btn">Начать работу</a>
+                </div>
+                <div class="authors-earnings-list__item">
+                    <div class="authors-earnings-list__item-count">
+                        <img src="./img/svg/authors/authors-n-3.svg" alt="num">
+                    </div>
+                    <div class="authors-earnings-list__item-title">ПОДРАБОТКА</div>
+                    <div class="authors-earnings-list__item-info">
+                        <div class="authors-earnings-list__item-info-salary">20 000 - 50 000 руб /мес</div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>1-3</span> дня в неделю
+                        </div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>3-5</span> часов в день
+                        </div>
+                        <div class="authors-earnings-list__item-info-row">
+                            <span>3-7</span> заказов в месяц
+                        </div>
+                    </div>
+                    <a href="" class="def-btn authors-earnings-list__item-btn">Начать работу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="authors-adv">
+        <div class="authors-adv-wrap limiter">
+            <h3 class="authors-adv__title">Преимущества работы в StudAvtor</h3>
+            <div class="authors-adv-list">
+                <div class="authors-adv-list__item">
+                    <img src="./img/svg/authors/authors-adv-1.svg" alt="">
+                    <div class="authors-adv-list__item-text">
+                        <div class="authors-adv-list__item-title">Экономия времени</div>
+                        <div class="authors-adv-list__item-content">Вам не нужно тратить время на оценку огромного количества «пустых» заявок и конкурировать с другими авторами занижая ставки в ущерб качеству и своему заработку.</div>
+                    </div>
+                </div>
+                <div class="authors-adv-list__item">
+                    <img src="./img/svg/authors/authors-adv-2.svg" alt="">
+                    <div class="authors-adv-list__item-text">
+                        <div class="authors-adv-list__item-title">Отсутствие комиссий</div>
+                        <div class="authors-adv-list__item-content">За выполненные заказы Вам выплачивается ровно столько, во сколько они были оценены и предложены Вам изначально. </div>
+                    </div>
+                </div>
+                <div class="authors-adv-list__item">
+                    <img src="./img/svg/authors/authors-adv-3.svg" alt="">
+                    <div class="authors-adv-list__item-text">
+                        <div class="authors-adv-list__item-title">Выгодные цены</div>
+                        <div class="authors-adv-list__item-content">Выгодные цены</div>
+                    </div>
+                </div>
+                <div class="authors-adv-list__item">
+                    <img src="./img/svg/authors/authors-adv-4.svg" alt="">
+                    <div class="authors-adv-list__item-text">
+                        <div class="authors-adv-list__item-title">Свобода действий</div>
+                        <div class="authors-adv-list__item-content">Вам на рассмотрение приходят уже оплаченные клиентами заказы с установленной стоимостью!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="authors-begin">
+        <div class="authors-begin-wrap limiter">
+            <h2 class="authors-begin__title">Как стать автором StudAvtor</h2>
+            <div class="authors-begin__subtitle">Стать автором в StudAvtor очень просто</div>
+            <div class="authors-begin-list">
+                <div class="authors-begin-list__item">
+                    <div class="authors-begin-list__item-num">
+                        <img src="./img/svg/authors/authors-bg-1.svg" alt="authors num">
+                    </div>
+                    <div class="authors-begin-list__item-content">
+                        <div class="authors-begin-list__item-title">Регистрируйтесь</div>
+                        <div class="authors-begin-list__item-text">Заполняйте форму регистрации и проходите активацию</div>
+                    </div>
+                </div>
+                <div class="authors-begin-list__item">
+                    <div class="authors-begin-list__item-num">
+                        <img src="./img/svg/authors/authors-bg-2.svg" alt="authors num">
+                    </div>
+                    <div class="authors-begin-list__item-content">
+                        <div class="authors-begin-list__item-title">Выполняйте заказы</div>
+                        <div class="authors-begin-list__item-text">Принимайте на выполнение предложенные Вам заказы</div>
+                    </div>
+                </div>
+                <div class="authors-begin-list__item">
+                    <div class="authors-begin-list__item-num">
+                        <img src="./img/svg/authors/authors-bg-3.svg" alt="authors num">
+                    </div>
+                    <div class="authors-begin-list__item-content">
+                        <div class="authors-begin-list__item-title">Зарабатывайте деньги</div>
+                        <div class="authors-begin-list__item-text">Выполняйте работы качественно и в установленный срок</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="authors-text">
+        <div class="authors-text-wrap limiter">
+            <h3 class="authors-text__title">Вакансии для авторов учебных работ: контрольных, <br> курсовых, дипломных и других видов работ</h3>
+            <div class="authors-text-content">
+                <ul class="authors-text-content-column">
+                    <li>Приглашаем к выгодному сотрудничеству исполнителей учебных работ по самым разным дисциплинам программ школ, ССУЗов и ВУЗов. У нас открыта вакансия для авторов контрольных, курсовых, дипломных работ, рефератов, диссертаций и других
+                        видов работ.</li>
+                </ul>
+                <ul class="authors-text-content-column">
+                    <li>Сотрудничая с нашим сервисом, Вы не только обеспечите себя стабильной работой в любом удобном для Вас месте и со свободным графиком, но и получите достойный доход!</li>
+                </ul>
+                <ul class="authors-text-content-column">
+                    <li>Вакансии для авторов студенческих работ на нашем сайте – это лучший выбор для тех, кто ценит свое время, и лучшая возможность реализовать свои способности! Написание студенческих работ занимает совсем немного времени, но приносит хороший
+                        дополнительный заработок.</li>
+                </ul>
+                <ul class="authors-text-content-column">
+                    <li>Мы гарантируем регулярный поток новых заказов, а это значит, что Вы можете быть уверены в стабильном заработке в течение всего года, и даже летом.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+        </main>
+        <!-- end of main part -->
+
+        <!-- connecting footer -->
+        <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-top-wrap limiter">
+            <a href="tel:+88007774758" class="footer-top__tel">
+                <svg class="icon icon-phone">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-phone"></use>
+                </svg>
+                <span>8 800 777 47 58</span>
+            </a>
+            <button class="white-btn footer-top__callback">
+                Перезвоните мне
+            </button>
+            <div class="footer-top-mail">
+                <span class="footer-top-mail__text">По нетипичным заказам пишите:</span>
+                <a href="mailto:info@studavtor.ru" class="footer-top-mail__address">
+                    <svg class="icon icon-mail">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-mail"></use>
+                    </svg>
+                    <span>info@studavtor.ru</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-main-wrap limiter">
+            <a href="#" class="footer-main__logo">
+                <svg class="icon icon-logo-white">
+                    <use xlink:href="./img/sprites/main-sprite.svg#icon-logo-white"></use>
+                </svg>
+            </a>
+            <nav class="footer-main-nav">
+                <ul class="unstyled footer-main-nav-list">
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Заказать</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Антиплагиат</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">о компании</a>
+                    </li>
+                    <li class="footer-main-nav-list__item">
+                        <a href="#">Авторам</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-main-socials">
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-vk">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-vk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-inst">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-inst"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-fb">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-fb"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer-main-socials__link">
+                    <svg class="icon icon-yt">
+                        <use xlink:href="./img/sprites/main-sprite.svg#icon-yt"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-wrap limiter">
+            <div class="footer-bottom__copyrights">
+                Copyright StudAvtor - Помощь студентам от лучших экспертов
+            </div>
+            <a href="#" class="footer-bottom__privacy">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- connecting modals -->
+    <div class="overlay">
+    <form class="modal modal-fb modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def-icon">
+            <img src="./img/default/modals/tel.svg" alt="icon">
+        </div>
+        <div class="modal-def__title">Заказать звонок</div>
+        <div class="input-module is-required">
+            <input class="input-module__input" type="text" placeholder="Введите своё имя">
+            <label class="input-module__label">Ваше имя</label>
+            <span class="input-module__message"></span>
+        </div>
+        <div class="input-module is-required">
+            <input class="input-module__input" type="text" placeholder="+7 (____) ____ - ____ - _____">
+            <label class="input-module__label">Телефон</label>
+            <span class="input-module__message"></span>
+        </div>
+        <div class="modal-fb__privacy">
+            <svg class="icon icon-lock">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-lock"></use>
+            </svg>
+            <span>Согласен с обработкой персональных данных в соответствии с Политикой конфеденциальности</span>
+        </div>
+        <button type="submit" class="modal-fb__submit def-btn">Узнать цену работы</button>
+    </form>
+    <div class="modal modal-thanks modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def-icon">
+            <img src="./img/default/modals/check.svg" alt="icon">
+        </div>
+        <div class="modal-def__title">Спасибо!</div>
+        <div class="modal-thanks__text">Мы получили Вашу заявку и свяжемся с Вами в ближайшее время по указанным контактам</div>
+        <a href="#" class="def-btn modal-thanks__link modal-close">Хорошо!</a>
+    </div>
+    <div class="modal modal-filter modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def__title">Заказать звонок</div>
+        <form class="filter">
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--only-select is-required">
+        <select class="select" placeholder="Выберите вид работы">
+            <option value="">Выберите вид работы</option>
+            <option value="13">Example 1</option>
+            <option value="14">Example 2</option>
+            <option value="15">Example 3</option>
+        </select>
+        <label class="input-module__label">Вид работы</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--autocomplete is-required">
+        <div class="autocomplete-holder">
+            <input type="text" class="autocomplete input-module__input" data-placeholder="Начните вводить предмет">
+        </div>
+        <label class="input-module__label">Предмет</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed filter-input-module--size input-module input-module--with-select is-required">
+        <input class="input-module__input" type="text">
+        <label class="input-module__label">Объем</label>
+        <span class="input-module__message"></span>
+        <select class="select">
+            <option value="">Страниц</option>
+            <option value="13">25 Страниц</option>
+            <option value="14">30 Страниц</option>
+            <option value="15">35 Страниц</option>
+        </select>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module input-module--calendar is-required">
+        <input class="input-module__input" type="text" placeholder="Выберите дату сдачи">
+        <svg class="icon icon-calendar">
+            <use xlink:href="./img/sprites/main-sprite.svg#icon-calendar"></use>
+        </svg>
+        <label class="input-module__label">Дата сдачи</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--last input-module">
+        <input class="input-module__input" type="text">
+        <label class="input-module__label">Тема работы</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-promocode">
+        <button class="filter-promocode__btn">У меня есть промокод</button>
+        <input type="text" class="unstyled filter-promocode__input" placeholder="Введите промокод">
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module is-required">
+        <input class="input-module__input" type="text" placeholder="Введите своё имя">
+        <label class="input-module__label">Ваше имя</label>
+        <span class="input-module__message"></span>
+    </div>
+    <div class="filter-input-module filter-input-module--halfed input-module is-required">
+        <input class="input-module__input" type="text" placeholder="+7 (____) ____ - ____ - _____">
+        <label class="input-module__label">Телефон</label>
+        <span class="input-module__message"></span>
+    </div>
+    <button type="submit" class="filter__submit def-btn def-btn--yellow">Узнать цену работы</button>
+    <div class="filter__note">
+        Для индивидуальной оценки нетипичные заказы просьба высылать на e-mail: <a href="mail:info@studavtor.ru" class="filter__note-mail">info@studavtor.ru</a>. <a href="#" class="filter__note-more">Подробнее</a>
+    </div>
+</form>
+    </div>
+</div>
+
+    <!-- end of page content -->
+
+    <!-- connecting scripts -->
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+
+</body>
+
+</html>

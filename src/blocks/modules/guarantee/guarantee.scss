@@ -1,0 +1,160 @@
+.guarantee {
+    background: #F8FAFE;
+    padding: 50px 0 68px;
+    @media (max-width: 1180px) {
+        padding: 35px 0 100px;
+        position: relative;
+    }
+    &--big-padd {
+        padding: 205px 0 65px;
+        @media (max-width: 1180px) {
+            padding: 340px 0 110px;
+        }
+    }
+    &--another {
+        background-color: $white;
+        @media (max-width: 1180px) {
+            padding-bottom: 40px;
+        }
+        .guarantee-list__item {
+            margin-bottom: 20px;
+            min-height: 39px;
+            display: flex;
+            align-items: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-wrap {
+        display: flex;
+        @media (max-width: 1180px) {
+            flex-wrap: wrap;
+        }
+    }
+    &-main {
+        width: 457px;
+        border-right: 1px solid rgba(196, 196, 196, 0.41);
+        padding-right: 73px;
+        @media (max-width: 1180px) {
+            width: 100%;
+            border-right: 0;
+            padding-right: 0;
+        }
+        &__subtitle {
+            font-family: $gilroy;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: rem(11);
+            line-height: lh(13, 11);
+            letter-spacing: 0.31em;
+            text-transform: uppercase;
+            color: $black;
+        }
+        &__title {
+            margin-bottom: 21px;
+            @media (max-width: 1180px) {
+                margin-bottom: 5px;
+                max-width: 250px;
+            }
+        }
+        &__text {
+            max-width: 360px;
+            margin-bottom: 35px;
+            font-weight: 300;
+            font-size: rem(21);
+            line-height: lh(30, 21);
+            color: $black;
+            @media (max-width: 1180px) {
+                font-size: rem(17);
+                margin-bottom: 15px;
+                max-width: 100%;
+            }
+        }
+        &__blockquote {
+            margin: 0;
+            padding-left: 70px;
+            font-size: rem(14);
+            line-height: lh(24, 14);
+            color: $tblack;
+            position: relative;
+            margin-bottom: 30px;
+            @media (max-width: 1180px) {
+                padding-left: 38px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 47px;
+                height: 40px;
+                background: url('../img/svg/blockquote.svg') no-repeat center;
+                background-size: 100% 100%;
+                @media (max-width: 1180px) {
+                    width: 27px;
+                    height: 23px;
+                }
+            }
+        }
+        &__btn {
+            @media (max-width: 1180px) {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 30px;
+                white-space: nowrap;
+                padding: 0 32px;
+            }
+        }
+    }
+    &-list {
+        width: calc(100% - 457px);
+        padding-left: 64px;
+        @media (max-width: 1180px) {
+            width: 100%;
+            padding-left: 0;
+        }
+        &__item {
+            padding-left: 52px;
+            position: relative;
+            margin-bottom: 29px;
+            @media (max-width: 1180px) {
+                margin-bottom: 15px;
+                padding-left: 39px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 39px;
+                background: url('../img/svg/guarantee-icon.svg') no-repeat center;
+                background-size: 100% 100%;
+                @media (max-width: 1180px) {
+                    width: 25px;
+                    height: 33px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-title {
+                font-size: rem(19);
+                line-height: lh(27, 19);
+                color: $black;
+                margin-bottom: 8px;
+                @media (max-width: 1180px) {
+                    font-size: rem(17);
+                    margin-bottom: 6px;
+                }
+            }
+            &-text {
+                font-size: rem(14);
+                line-height: lh(24, 14);
+                color: $black;
+            }
+        }
+    }
+}

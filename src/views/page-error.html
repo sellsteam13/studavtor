@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("../blocks/modules/header/head.html")
+
+<body>
+
+    <!-- begin of page content -->
+
+    <div class="wrapper">
+
+        <!-- connecting header-->
+        @@include("../blocks/modules/header/header.html")
+
+        <!-- including breadcrumbs-->
+        @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+
+        <!-- begin of main part -->
+        <main class="main">
+
+            <!-- error section -->
+            <section class="error">
+                <div class="error-wrap limiter">
+                    <div class="error-titling">
+                        <h2 class="error__title">Страница не найдена</h2>
+                        <div class="section__descr error__subtitle">К сожалению, запрашиваемая Вами страница не найдена. Возможно она была удалена либо ее адрес был изменен</div>
+                    </div>
+                    <div class="error-illstr">
+                        <img class="error-illstr__main" src="./img/default/error-figures/error-illstr.svg" alt="error main figure">
+                        <img class="error-illstr__pen" src="./img/default/error-figures/error-pen.png" alt="error pen">
+                    </div>
+                    <div class="error-links">
+                        <div class="error-links__title">быстрый переход</div>
+                        <nav class="error-links-nav">
+                            <ul class="unstyled">
+                                <li class="error-links-nav__item">
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">Блог</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">Заказать</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">Авторам</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">Антиплагиат</a>
+                                </li>
+                                <li class="error-links-nav__item">
+                                    <a href="#">компании</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="error-btn">
+                        <a href="" class="def-btn def-btn--has-arrow-out def-btn--green">Вернуться на сайт</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- end of main part -->
+
+        <!-- connecting footer -->
+        @@include("../blocks/modules/footer/footer.html")
+
+    </div>
+
+    <!-- connecting modals -->
+    @@include("../blocks/modules/modals/modals.html")
+
+    <!-- end of page content -->
+
+    <!-- connecting scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

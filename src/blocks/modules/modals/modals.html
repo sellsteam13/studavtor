@@ -1,0 +1,40 @@
+<div class="overlay">
+    <form class="modal modal-fb modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def-icon">
+            <img src="./img/default/modals/tel.svg" alt="icon">
+        </div>
+        <div class="modal-def__title">Заказать звонок</div>
+        <div class="input-module is-required">
+            <input class="input-module__input" type="text" placeholder="Введите своё имя">
+            <label class="input-module__label">Ваше имя</label>
+            <span class="input-module__message"></span>
+        </div>
+        <div class="input-module is-required">
+            <input class="input-module__input" type="text" placeholder="+7 (____) ____ - ____ - _____">
+            <label class="input-module__label">Телефон</label>
+            <span class="input-module__message"></span>
+        </div>
+        <div class="modal-fb__privacy">
+            <svg class="icon icon-lock">
+                <use xlink:href="./img/sprites/main-sprite.svg#icon-lock"></use>
+            </svg>
+            <span>Согласен с обработкой персональных данных в соответствии с Политикой конфеденциальности</span>
+        </div>
+        <button type="submit" class="modal-fb__submit def-btn">Узнать цену работы</button>
+    </form>
+    <div class="modal modal-thanks modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def-icon">
+            <img src="./img/default/modals/check.svg" alt="icon">
+        </div>
+        <div class="modal-def__title">Спасибо!</div>
+        <div class="modal-thanks__text">Мы получили Вашу заявку и свяжемся с Вами в ближайшее время по указанным контактам</div>
+        <a href="#" class="def-btn modal-thanks__link modal-close">Хорошо!</a>
+    </div>
+    <div class="modal modal-filter modal-def">
+        <button class="modal-close modal-close--def"></button>
+        <div class="modal-def__title">Заказать звонок</div>
+        @@include("../filter/filter-adv.html")
+    </div>
+</div>

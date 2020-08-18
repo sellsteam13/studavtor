@@ -1,0 +1,151 @@
+/** styles for modals **/
+
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#000, .4);
+    opacity: 0;
+    transition: opacity $trans;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.overlay-toggled .overlay {
+    opacity: 1;
+    transition: opacity $trans;
+}
+
+.modal {
+    position: relative;
+    .modal-close--def {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 7px;
+        background: url('../img/default/modals/cross.svg') no-repeat center;
+        background-size: 11px 11px;
+        cursor: pointer;
+        transition: transform $trans;
+        &:hover {
+            transform: rotate(360deg);
+            transition: transform $trans;
+        }
+    }
+    &-def {
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: transform $trans, opacity $trans;
+        display: none;
+        flex-direction: column;
+        position: relative;
+        background: $white;
+        box-shadow: 0px 8px 42px rgba(0, 0, 0, 0.38);
+        border-radius: 8px;
+        width: 475px;
+        padding: 60px 38px 30px;
+        margin: 90px 0;
+        @media (max-width: 630px) {
+            max-width: calc(100vw - 30px);
+            padding: 60px 15px 20px;
+        }
+        &.animated {
+            opacity: 1;
+            transform: translateY(0);
+            transition: transform $trans, opacity $trans;
+        }
+        &-icon {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            width: 93px;
+            height: 93px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        &__title {
+            margin-bottom: 27px;
+            font-size: rem(27);
+            text-align: center;
+            color: $black;
+            @media (max-width: 630px) {
+                font-size: rem(18);
+                margin-bottom: 18px;
+            }
+        }
+    }
+    &-fb {
+        .modal-def-icon {
+            background: #75B7F3;
+            box-shadow: 0px 9px 19px rgba(117, 183, 243, 0.41);
+        }
+        .input-module {
+            margin-bottom: 33px;
+            &:nth-last-child(3) {
+                margin-bottom: 20px;
+            }
+        }
+        &__privacy {
+            display: flex;
+            margin-bottom: 19px;
+            .icon-lock {
+                width: 18px;
+                height: 24px;
+                margin-right: 13px;
+                fill: #CFD6DC;
+            }
+            span {
+                font-size: rem(12);
+                line-height: lh(19, 12);
+                color: $gray;
+            }
+        }
+        &__submit {
+            margin: 0 auto;
+        }
+    }
+    &-thanks {
+        .modal-def-icon {
+            background: #8AD377;
+            box-shadow: 0px 9px 19px rgba(138, 211, 119, 0.41);
+        }
+        &__text {
+            max-width: 340px;
+            margin: 0 auto 25px;
+            line-height: 169%;
+            text-align: center;
+            color: $gray;
+        }
+        &__link {
+            margin: 0 auto;
+        }
+    }
+    &-filter {
+        width: 1020px;
+        margin: 30px 0;
+        @media (max-width: 1180px) {
+            max-width: calc(100% - 30px);
+        }
+        @media (max-width: 630px) {
+            padding-top: 20px;
+        }
+        .filter {
+            box-shadow: none;
+            padding: 0;
+            &-promocode {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
